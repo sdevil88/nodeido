@@ -26,7 +26,7 @@ async function main(sender,data,htmlFile) {
 const htmlToSend = template(data);
 
  const info = await transporter.sendMail({
-    from: '"sagar ghimire" <wwwghimiresagar88@gmail.com>',
+    from: '"myname" <mymail@gmail.com>',
     to: sender.toString(),
     subject: "hello",
     html: htmlToSend,
@@ -38,7 +38,7 @@ const htmlToSend = template(data);
 }
 
 const data={
-    name: "sagar ghimire",
+    name: "send name",
     p_name: "google",
     link: "https://accounts.google.com/signin/v2/recoveryidentifier?flowName=GlifWebSignIn&flowEntry=AccountRecovery",
     hi: "hello welcome",
@@ -46,6 +46,6 @@ const data={
 };
 
 const htmlFile = "template.html"
-const sender = ["wwwghimiresagar88@gmail.com","s.g.devil.88@gmail.com"];
+const sender = ["wwwgsender.com","sender@gmail.com"];
 main(sender, data,htmlFile).catch(console.error);
 
